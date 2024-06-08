@@ -2,9 +2,9 @@
   "_fv": 60,
   "_type": "enchantment",
   "definition": {
-    "name": "Aerial",
+    "name": "Infernum",
     "type": "BREAKABLE",
-    "rarity": "VERY_RARE",
+    "rarity": "UNCOMMON",
     "minLevel": 1,
     "maxLevel": 3,
     "damageModifier": 0,
@@ -12,22 +12,13 @@
     "excludeEnchantments": false,
     "compatibleItems": [
       {
-        "value": "Items.BOW"
-      },
-      {
-        "value": "Items.CROSSBOW"
-      },
-      {
-        "value": "Items.TRIDENT"
-      },
-      {
         "value": "CUSTOM:Flamethower"
       }
     ],
     "excludeItems": false,
-    "isTreasureEnchantment": true,
+    "isTreasureEnchantment": false,
     "isCurse": false,
-    "isAllowedOnBooks": false,
+    "isAllowedOnBooks": true,
     "canGenerateInLootTables": true,
     "canVillagerTrade": true
   }
