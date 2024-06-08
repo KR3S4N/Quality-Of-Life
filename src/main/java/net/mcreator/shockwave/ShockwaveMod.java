@@ -18,6 +18,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.shockwave.init.ShockwaveModTabs;
+import net.mcreator.shockwave.init.ShockwaveModPotions;
+import net.mcreator.shockwave.init.ShockwaveModMobEffects;
 import net.mcreator.shockwave.init.ShockwaveModItems;
 import net.mcreator.shockwave.init.ShockwaveModEntities;
 import net.mcreator.shockwave.init.ShockwaveModEnchantments;
@@ -46,6 +48,9 @@ public class ShockwaveMod {
 		ShockwaveModEntities.REGISTRY.register(bus);
 		ShockwaveModEnchantments.REGISTRY.register(bus);
 		ShockwaveModTabs.REGISTRY.register(bus);
+
+		ShockwaveModMobEffects.REGISTRY.register(bus);
+		ShockwaveModPotions.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init
