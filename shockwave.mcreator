@@ -1,0 +1,409 @@
+{
+  "mod_elements": [
+    {
+      "name": "Lifesteal",
+      "type": "damagetype",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lifesteal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shockwave/damage_type/lifesteal.json"
+        ]
+      },
+      "path": "~/Damage Types"
+    },
+    {
+      "name": "Bleeding",
+      "type": "damagetype",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shockwave/damage_type/bleeding.json"
+        ]
+      },
+      "path": "~/Damage Types"
+    },
+    {
+      "name": "Concussing",
+      "type": "damagetype",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "concussing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shockwave/damage_type/concussing.json"
+        ]
+      },
+      "path": "~/Damage Types"
+    },
+    {
+      "name": "Shock",
+      "type": "damagetype",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/shockwave/damage_type/shock.json"
+        ]
+      },
+      "path": "~/Damage Types"
+    },
+    {
+      "name": "Aerial",
+      "type": "enchantment",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aerial",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shockwave/enchantment/AerialEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "AerialEnchantment",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aerial_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shockwave/procedures/AerialEnchantmentProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "AerialFallingEnchantment",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aerial_falling_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shockwave/procedures/AerialFallingEnchantmentProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "ReachChanges",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reach_changes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shockwave/procedures/ReachChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/QoL/Combat"
+    },
+    {
+      "name": "AerialFallingEnchantmentDeactivate",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aerial_falling_enchantment_deactivate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shockwave/procedures/AerialFallingEnchantmentDeactivateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "AerialFallingEnchantmentCancel",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aerial_falling_enchantment_cancel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shockwave/procedures/AerialFallingEnchantmentCancelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchantments"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "lastItemHeld",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ENTITIES:minecraft:beehive_inhabitors": [],
+    "DAMAGE_TYPES:minecraft:bypasses_enchantments": [],
+    "ENTITIES:minecraft:skeletons": [],
+    "BLOCKS:minecraft:tall_flowers": [],
+    "BLOCKS:minecraft:valid_spawn": [],
+    "DAMAGE_TYPES:minecraft:is_fall": [],
+    "DAMAGE_TYPES:minecraft:is_freezing": [],
+    "BIOMES:minecraft:is_ocean": [],
+    "BLOCKS:minecraft:logs": [],
+    "BLOCKS:minecraft:fire": [],
+    "BLOCKS:minecraft:leaves": [],
+    "BLOCKS:minecraft:dragon_immune": [],
+    "BLOCKS:minecraft:climbable": [],
+    "BIOMES:minecraft:is_mountain": [],
+    "FUNCTIONS:minecraft:load": [],
+    "ENTITIES:minecraft:powder_snow_walkable_mobs": [],
+    "BLOCKS:minecraft:wither_immune": [],
+    "BIOMES:minecraft:is_river": [],
+    "ITEMS:mod:small_reach": [],
+    "BLOCKS:minecraft:wooden_fences": [],
+    "BIOMES:minecraft:is_hill": [],
+    "BIOMES:minecraft:is_overworld": [],
+    "ENTITIES:minecraft:arrows": [],
+    "BLOCKS:minecraft:dirt": [],
+    "BLOCKS:minecraft:fences": [],
+    "DAMAGE_TYPES:minecraft:is_drowning": [],
+    "BIOMES:minecraft:is_forest": [],
+    "ITEMS:mod:very_large_reach": [
+      "Items.TRIDENT"
+    ],
+    "FUNCTIONS:minecraft:tick": [],
+    "DAMAGE_TYPES:minecraft:is_explosion": [],
+    "ENTITIES:minecraft:impact_projectiles": [],
+    "ITEMS:minecraft:flowers": [],
+    "DAMAGE_TYPES:minecraft:bypasses_effects": [],
+    "BLOCKS:minecraft:small_flowers": [],
+    "ITEMS:minecraft:small_flowers": [],
+    "DAMAGE_TYPES:minecraft:is_fire": [],
+    "ITEMS:minecraft:arrows": [],
+    "BIOMES:minecraft:is_nether": [],
+    "DAMAGE_TYPES:minecraft:bypasses_shield": [],
+    "BLOCKS:minecraft:bee_growables": [],
+    "ITEMS:minecraft:planks": [],
+    "DAMAGE_TYPES:minecraft:bypasses_cooldown": [],
+    "BLOCKS:minecraft:prevent_mob_spawning_inside": [],
+    "DAMAGE_TYPES:minecraft:bypasses_armor": [],
+    "BLOCKS:minecraft:impermeable": [],
+    "ITEMS:mod:normal_reach": [
+      "Items.WOODEN_AXE",
+      "Items.STONE_AXE",
+      "Items.IRON_AXE",
+      "Items.GOLDEN_AXE",
+      "Items.DIAMOND_AXE",
+      "Items.NETHERITE_AXE"
+    ],
+    "DAMAGE_TYPES:minecraft:is_projectile": [],
+    "BIOMES:minecraft:is_end": [],
+    "ITEMS:mod:large_reach": [
+      "Items.WOODEN_SWORD",
+      "Items.STONE_SWORD",
+      "Items.IRON_SWORD",
+      "Items.GOLDEN_SWORD",
+      "Items.DIAMOND_SWORD",
+      "Items.NETHERITE_SWORD"
+    ],
+    "BLOCKS:minecraft:walls": [],
+    "BLOCKS:minecraft:animals_spawnable_on": [],
+    "BLOCKS:minecraft:beacon_base_blocks": []
+  },
+  "language_map": {
+    "en_us": {
+      "death.attack.concussing": "%1$s was concussed",
+      "enchantment.shockwave.aerial": "Aerial",
+      "death.attack.lifesteal.item": "%1$s was lifestolen by %2$s using %3$s",
+      "death.attack.shock": "%1$s was shocked",
+      "death.attack.bleeding.player": "%1$s bled out whilst trying to escape %2$s",
+      "death.attack.shock.player": "%1$s was shocked whilst trying to escape %2$s",
+      "death.attack.bleeding": "%1$s bled out",
+      "death.attack.concussing.item": "%1$s was concussed by %2$s using %3$s",
+      "death.attack.concussing.player": "%1$s went out cold whilst trying to escape %2$s",
+      "death.attack.bleeding.item": "%1$s bled to death because of %2$s\u0027s %3$s",
+      "death.attack.lifesteal": "%1$s lost their life",
+      "death.attack.shock.item": "%1$s was shocked by %2$s using %3$s",
+      "death.attack.lifesteal.player": "%1$s lost their life whilst trying to escape %2$s"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Damage Types",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Enchantments",
+        "children": []
+      },
+      {
+        "name": "Potions",
+        "children": []
+      },
+      {
+        "name": "QoL",
+        "children": [
+          {
+            "name": "Combat",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Weapons",
+        "children": [
+          {
+            "name": "Knifes",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "shockwave",
+    "modName": "Shockwave",
+    "version": "1.0.0",
+    "author": "Noah V, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "pehkui",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.shockwave"
+  },
+  "mcreatorVersion": 202400118518
+}

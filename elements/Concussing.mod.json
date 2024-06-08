@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.3,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s was concussed",
+    "itemDeathMessage": "%1$s was concussed by %2$s using %3$s",
+    "playerDeathMessage": "%1$s went out cold whilst trying to escape %2$s"
+  }
+}

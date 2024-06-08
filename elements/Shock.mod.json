@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.11,
+    "scaling": "never",
+    "effects": "poking",
+    "normalDeathMessage": "%1$s was shocked",
+    "itemDeathMessage": "%1$s was shocked by %2$s using %3$s",
+    "playerDeathMessage": "%1$s was shocked whilst trying to escape %2$s"
+  }
+}
