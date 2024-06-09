@@ -466,56 +466,6 @@
         ]
       },
       "path": "~/Enchantments"
-    },
-    {
-      "name": "InstantGrowthEffectStartedapplied",
-      "type": "procedure",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "instant_growth_effect_startedapplied",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/shockwave/procedures/InstantGrowthEffectStartedappliedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/QoL/Pekhui"
-    },
-    {
-      "name": "InstantGrowth",
-      "type": "potioneffect",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "instant_growth",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/shockwave/potion/InstantGrowthMobEffect.java"
-        ]
-      },
-      "path": "~/QoL/Pekhui"
-    },
-    {
-      "name": "InstantGrowthPotion",
-      "type": "potion",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "instant_growth_potion",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/QoL/Pekhui"
     }
   ],
   "variable_elements": [
@@ -599,12 +549,9 @@
   },
   "language_map": {
     "en_us": {
-      "item.minecraft.lingering_potion.effect.instant_growth_potion": "Lingering Potion of Instant Growth",
       "death.attack.shock.player": "%1$s was shocked whilst trying to escape %2$s",
       "death.attack.shock.item": "%1$s was shocked by %2$s using %3$s",
-      "item.minecraft.splash_potion.effect.instant_growth_potion": "Splash Potion of Instant Growth",
       "death.attack.concussing": "%1$s was concussed",
-      "effect.shockwave.instant_growth": "Instant Growth",
       "enchantment.shockwave.aerial": "Aerial",
       "enchantment.shockwave.pyrotech": "Pyrotech",
       "death.attack.lifesteal.item": "%1$s was lifestolen by %2$s using %3$s",
@@ -614,8 +561,6 @@
       "death.attack.incineration": "%1$s was reduced to ash",
       "enchantment.shockwave.infernum": "Infernum",
       "death.attack.incineration.player": "%1$s was cooked medium-rare whilst trying to escape %2$s",
-      "item.minecraft.tipped_arrow.effect.instant_growth_potion": "Arrow of Instant Growth",
-      "item.minecraft.potion.effect.instant_growth_potion": "Potion of Instant Growth",
       "death.attack.bleeding": "%1$s bled out",
       "death.attack.concussing.item": "%1$s was concussed by %2$s using %3$s",
       "death.attack.concussing.player": "%1$s went out cold whilst trying to escape %2$s",
@@ -667,6 +612,10 @@
           },
           {
             "name": "Flamethrower",
+            "children": []
+          },
+          {
+            "name": "Exotics",
             "children": []
           }
         ]
