@@ -17,10 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.shockwave.init.ShockwaveModTabs;
-import net.mcreator.shockwave.init.ShockwaveModItems;
-import net.mcreator.shockwave.init.ShockwaveModEntities;
-import net.mcreator.shockwave.init.ShockwaveModEnchantments;
+import net.mcreator.shockwave.init.ShockwaveModSounds;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -41,11 +38,7 @@ public class ShockwaveMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
-		ShockwaveModItems.REGISTRY.register(bus);
-		ShockwaveModEntities.REGISTRY.register(bus);
-		ShockwaveModEnchantments.REGISTRY.register(bus);
-		ShockwaveModTabs.REGISTRY.register(bus);
+		ShockwaveModSounds.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

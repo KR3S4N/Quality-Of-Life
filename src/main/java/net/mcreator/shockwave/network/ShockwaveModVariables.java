@@ -67,6 +67,7 @@ public class ShockwaveModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			clone.parryCounter = original.parryCounter;
 			if (!event.isWasDeath()) {
 				clone.lastItemHeld = original.lastItemHeld;
 			}
@@ -105,6 +106,7 @@ public class ShockwaveModVariables {
 
 	public static class PlayerVariables {
 		public ItemStack lastItemHeld = ItemStack.EMPTY;
+		public double parryCounter = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -114,12 +116,14 @@ public class ShockwaveModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.put("lastItemHeld", lastItemHeld.save(new CompoundTag()));
+			nbt.putDouble("parryCounter", parryCounter);
 			return nbt;
 		}
 
 		public void readNBT(Tag tag) {
 			CompoundTag nbt = (CompoundTag) tag;
 			lastItemHeld = ItemStack.of(nbt.getCompound("lastItemHeld"));
+			parryCounter = nbt.getDouble("parryCounter");
 		}
 	}
 
@@ -145,6 +149,7 @@ public class ShockwaveModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.lastItemHeld = message.data.lastItemHeld;
+					variables.parryCounter = message.data.parryCounter;
 				}
 			});
 			context.setPacketHandled(true);
