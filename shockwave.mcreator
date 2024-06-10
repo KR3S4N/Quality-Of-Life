@@ -1,5 +1,96 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "WoodenScythe",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_scythe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shockwave/models/item/wooden_scythe.json",
+          "src/main/java/net/mcreator/shockwave/item/WoodenScytheItem.java"
+        ]
+      },
+      "path": "~/Weapons/Scythes"
+    },
+    {
+      "name": "StoneScythe",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_scythe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shockwave/item/StoneScytheItem.java",
+          "src/main/resources/assets/shockwave/models/item/stone_scythe.json"
+        ]
+      },
+      "path": "~/Weapons/Scythes"
+    },
+    {
+      "name": "IronScythe",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_scythe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shockwave/models/item/iron_scythe.json",
+          "src/main/java/net/mcreator/shockwave/item/IronScytheItem.java"
+        ]
+      },
+      "path": "~/Weapons/Scythes"
+    },
+    {
+      "name": "GoldScythe",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_scythe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/shockwave/models/item/gold_scythe.json",
+          "src/main/java/net/mcreator/shockwave/item/GoldScytheItem.java"
+        ]
+      },
+      "path": "~/Weapons/Scythes"
+    },
+    {
+      "name": "DiamondScythe",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_scythe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shockwave/item/DiamondScytheItem.java",
+          "src/main/resources/assets/shockwave/models/item/diamond_scythe.json"
+        ]
+      },
+      "path": "~/Weapons/Scythes"
+    },
+    {
+      "name": "NetheriteScythe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_scythe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/shockwave/item/NetheriteScytheItem.java",
+          "src/main/resources/assets/shockwave/models/item/netherite_scythe.json"
+        ]
+      },
+      "path": "~/Weapons/Scythes"
+    }
+  ],
   "variable_elements": [
     {
       "name": "lastItemHeld",
@@ -100,12 +191,45 @@
   },
   "language_map": {
     "en_us": {
-      "subtitles.attack.parry": "Attack Parried"
+      "subtitles.attack.parry": "Attack Parried",
+      "item.shockwave.stone_scythe": "Stone Scythe",
+      "item.shockwave.wooden_scythe": "Wooden Scythe",
+      "item.shockwave.gold_scythe": "Gold Scythe",
+      "item.shockwave.iron_scythe": "Iron Scythe",
+      "item.shockwave.diamond_scythe": "Iron Scythe",
+      "item.shockwave.netherite_scythe": "Netherite Scythe"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Exotics",
+        "children": [
+          {
+            "name": "Bases",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Weapons",
+        "children": [
+          {
+            "name": "Scythes",
+            "children": []
+          },
+          {
+            "name": "Knifes",
+            "children": []
+          },
+          {
+            "name": "Recipes",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "shockwave",
