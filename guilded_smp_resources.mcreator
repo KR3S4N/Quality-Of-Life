@@ -1,0 +1,62 @@
+{
+  "mod_elements": [],
+  "variable_elements": [
+    {
+      "name": "lastItemHeld",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "parryCounter",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "attack.parry",
+      "files": [
+        "block1",
+        "block2",
+        "block3",
+        "block4",
+        "block5"
+      ],
+      "category": "player",
+      "subtitle": "Attack Parried"
+    }
+  ],
+  "tag_elements": {},
+  "language_map": {
+    "en_us": {
+      "subtitles.attack.parry": "Attack Parried"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "guilded_smp_resources",
+    "modName": "Gilded SMP Resources",
+    "version": "1.1.1",
+    "description": "A resource mod for the Gilded SMP! This contains sensitive data, do not leak to the public.",
+    "author": "Kreshn",
+    "websiteURL": "https://kreshn.dev/",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "pehkui",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Models made using Blockbench - https://blockbench.net",
+    "modElementsPackage": "net.resources.guilded_smp"
+  },
+  "mcreatorVersion": 202400118518
+}

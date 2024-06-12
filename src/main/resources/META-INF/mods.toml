@@ -3,17 +3,18 @@ loaderVersion="[47,)"
 license="Not specified"
 
 [[mods]]
-modId="shockwave"
-version="1.0.0"
-displayName="Shockwave"
-displayURL="https://mcreator.net"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="Noah V, MCreator"
+modId="guilded_smp_resources"
+version="1.1.1"
+displayName="Gilded SMP Resources"
+displayURL="https://kreshn.dev/"
+credits="Models made using Blockbench - https://blockbench.net"
+authors="Kreshn"
+description="A resource mod for the Gilded SMP! This contains sensitive data, do not leak to the public."
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
-[[dependencies.shockwave]]
+[[dependencies.guilded_smp_resources]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
@@ -21,13 +22,13 @@ authors="Noah V, MCreator"
     side="BOTH"
 
 
-[[dependencies.shockwave]]
+[[dependencies.guilded_smp_resources]]
     modId="pehkui"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.shockwave]]
+[[dependencies.guilded_smp_resources]]
     modId="geckolib"
     mandatory=false
     versionRange="[0,)"
