@@ -3,23 +3,23 @@
     "subtitle": "subtitles.attack.parry",
     "sounds": [
       {
-        "name": "guilded_smp_resources:block1",
+        "name": "shockwave_smp_resources:block1",
         "stream": false
       },
       {
-        "name": "guilded_smp_resources:block2",
+        "name": "shockwave_smp_resources:block2",
         "stream": false
       },
       {
-        "name": "guilded_smp_resources:block3",
+        "name": "shockwave_smp_resources:block3",
         "stream": false
       },
       {
-        "name": "guilded_smp_resources:block4",
+        "name": "shockwave_smp_resources:block4",
         "stream": false
       },
       {
-        "name": "guilded_smp_resources:block5",
+        "name": "shockwave_smp_resources:block5",
         "stream": false
       }
     ]

@@ -1,6 +1,6 @@
-package net.resources.guilded_smp.network;
+package net.resources.shockwave_smp.network;
 
-import net.resources.guilded_smp.GuildedSmpResourcesMod;
+import net.resources.shockwave_smp.ShockwaveSmpResourcesMod;
 
 import net.minecraftforge.network.PacketDistributor;
 import net.minecraftforge.network.NetworkEvent;
@@ -31,10 +31,10 @@ import net.minecraft.client.Minecraft;
 import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class GuildedSmpResourcesModVariables {
+public class ShockwaveSmpResourcesModVariables {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
-		GuildedSmpResourcesMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
+		ShockwaveSmpResourcesMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
 	}
 
 	@SubscribeEvent
@@ -82,7 +82,7 @@ public class GuildedSmpResourcesModVariables {
 		@SubscribeEvent
 		public static void onAttachCapabilities(AttachCapabilitiesEvent<Entity> event) {
 			if (event.getObject() instanceof Player && !(event.getObject() instanceof FakePlayer))
-				event.addCapability(new ResourceLocation("guilded_smp_resources", "player_variables"), new PlayerVariablesProvider());
+				event.addCapability(new ResourceLocation("shockwave_smp_resources", "player_variables"), new PlayerVariablesProvider());
 		}
 
 		private final PlayerVariables playerVariables = new PlayerVariables();
@@ -110,7 +110,7 @@ public class GuildedSmpResourcesModVariables {
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
-				GuildedSmpResourcesMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
+				ShockwaveSmpResourcesMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
 		}
 
 		public Tag writeNBT() {

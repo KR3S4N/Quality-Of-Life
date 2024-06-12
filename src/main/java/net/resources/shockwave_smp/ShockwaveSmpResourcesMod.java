@@ -1,9 +1,9 @@
-package net.resources.guilded_smp;
+package net.resources.shockwave_smp;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.resources.guilded_smp.init.GuildedSmpResourcesModSounds;
+import net.resources.shockwave_smp.init.ShockwaveSmpResourcesModSounds;
 
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
@@ -28,17 +28,17 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
-@Mod("guilded_smp_resources")
-public class GuildedSmpResourcesMod {
-	public static final Logger LOGGER = LogManager.getLogger(GuildedSmpResourcesMod.class);
-	public static final String MODID = "guilded_smp_resources";
+@Mod("shockwave_smp_resources")
+public class ShockwaveSmpResourcesMod {
+	public static final Logger LOGGER = LogManager.getLogger(ShockwaveSmpResourcesMod.class);
+	public static final String MODID = "shockwave_smp_resources";
 
-	public GuildedSmpResourcesMod() {
+	public ShockwaveSmpResourcesMod() {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		GuildedSmpResourcesModSounds.REGISTRY.register(bus);
+		ShockwaveSmpResourcesModSounds.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init
