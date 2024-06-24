@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diamond_block",
+    "minecraft:emerald_block",
+    "minecraft:sculk_shrieker",
+    "minecraft:anvil",
+    "minecraft:chipped_anvil",
+    "minecraft:damaged_anvil",
+    "minecraft:ender_chest",
+    "minecraft:netherite_sword",
+    "minecraft:netherite_shovel",
+    "minecraft:netherite_pickaxe",
+    "minecraft:netherite_axe",
+    "minecraft:netherite_hoe",
+    "minecraft:trident",
+    "minecraft:netherite_helmet",
+    "minecraft:netherite_chestplate",
+    "minecraft:netherite_leggings",
+    "minecraft:netherite_boots",
+    "minecraft:sculk_sensor",
+    "minecraft:calibrated_sculk_sensor",
+    "minecraft:sculk",
+    "minecraft:sculk_catalyst",
+    "minecraft:sculk_vein",
+    "minecraft:turtle_helmet"
+  ]
+}
