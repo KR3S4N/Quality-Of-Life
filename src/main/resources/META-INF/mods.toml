@@ -3,19 +3,18 @@ loaderVersion="[47,)"
 license="All Rights Reserved"
 
 [[mods]]
-modId="shockwave_smp_resources"
+modId="quality_of_life"
 version="1.1.1"
-displayName="Shockwave SMP Resources"
-displayURL="https://kreshn.dev/"
-logoFile="logo.png"
+displayName="Quality of Life"
+displayURL="https://mcreator.net"
 credits="Models made using Blockbench - https://blockbench.net"
 authors="Kreshn"
-description="A resource mod for the Shockwave SMP! This contains sensitive data, do not leak to the public."
+description="A QoL Mod enhancing various parts of the minecraft experience!"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
-[[dependencies.shockwave_smp_resources]]
+[[dependencies.quality_of_life]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
@@ -23,19 +22,19 @@ description="A resource mod for the Shockwave SMP! This contains sensitive data,
     side="BOTH"
 
 
-[[dependencies.shockwave_smp_resources]]
+[[dependencies.quality_of_life]]
     modId="pehkui"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.shockwave_smp_resources]]
+[[dependencies.quality_of_life]]
     modId="geckolib"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.shockwave_smp_resources]]
+[[dependencies.quality_of_life]]
     modId="playeranimator"
     mandatory=false
     versionRange="[0,)"

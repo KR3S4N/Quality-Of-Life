@@ -1,0 +1,89 @@
+{
+  "mod_elements": [],
+  "variable_elements": [
+    {
+      "name": "isRedFlareDeployed",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "isBlueFlareDeployed",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "isGreenFlareDeployed",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "DAMAGE_TYPES:minecraft:bypasses_cooldown": [
+      "CUSTOM:PyrotechnicMishap"
+    ],
+    "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
+      "CUSTOM:PyrotechnicMishap"
+    ],
+    "DAMAGE_TYPES:minecraft:is_explosion": [
+      "CUSTOM:PyrotechnicMishap"
+    ],
+    "DAMAGE_TYPES:minecraft:bypasses_armor": [
+      "CUSTOM:PyrotechnicMishap"
+    ],
+    "DAMAGE_TYPES:minecraft:is_fire": [
+      "CUSTOM:PyrotechnicMishap"
+    ],
+    "DAMAGE_TYPES:minecraft:is_projectile": [
+      "CUSTOM:PyrotechnicMishap"
+    ],
+    "DAMAGE_TYPES:minecraft:bypasses_effects": [
+      "CUSTOM:PyrotechnicMishap"
+    ],
+    "DAMAGE_TYPES:minecraft:bypasses_shield": [
+      "CUSTOM:PyrotechnicMishap"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "effect.shockwave_smp_resources.flare_deployed_green": "Flare Deployed",
+      "effect.shockwave_smp_resources.flare_deployed_red": "Flare Deployed",
+      "item.shockwave_smp_resources.strength_elixir": "Strength Elixir",
+      "item.shockwave_smp_resources.alert_flare_green": "Alert Flare",
+      "subtitles.player.attack.heavy_crit": "Player performs Heavy Crit",
+      "item.shockwave_smp_resources.alert_flare_blue": "Alert Flare",
+      "item.shockwave_smp_resources.jump_elixir": "Jump Elixir",
+      "effect.shockwave_smp_resources.flare_deployed_blue": "Flare Deployed",
+      "item.shockwave_smp_resources.speed_elixir": "Speed Elixir",
+      "item.shockwave_smp_resources.alert_flare_red": "Alert Flare"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "quality_of_life",
+    "modName": "Quality of Life",
+    "version": "1.1.1",
+    "description": "A QoL Mod enhancing various parts of the minecraft experience!",
+    "author": "Kreshn",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "pehkui",
+      "geckolib",
+      "playeranimator"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Models made using Blockbench - https://blockbench.net",
+    "modElementsPackage": "net.resources.quality_of_life"
+  },
+  "mcreatorVersion": 202400118518
+}

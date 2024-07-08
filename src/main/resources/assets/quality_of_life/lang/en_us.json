@@ -1,0 +1,12 @@
+{
+  "effect.shockwave_smp_resources.flare_deployed_green": "Flare Deployed",
+  "effect.shockwave_smp_resources.flare_deployed_red": "Flare Deployed",
+  "item.shockwave_smp_resources.strength_elixir": "Strength Elixir",
+  "item.shockwave_smp_resources.alert_flare_green": "Alert Flare",
+  "subtitles.player.attack.heavy_crit": "Player performs Heavy Crit",
+  "item.shockwave_smp_resources.alert_flare_blue": "Alert Flare",
+  "item.shockwave_smp_resources.jump_elixir": "Jump Elixir",
+  "effect.shockwave_smp_resources.flare_deployed_blue": "Flare Deployed",
+  "item.shockwave_smp_resources.speed_elixir": "Speed Elixir",
+  "item.shockwave_smp_resources.alert_flare_red": "Alert Flare"
+}
