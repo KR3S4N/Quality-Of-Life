@@ -1,0 +1,19 @@
+{
+  "player.attack.attunements_match": {
+    "subtitle": "subtitles.player.attack.attunements_match",
+    "sounds": [
+      {
+        "name": "quality_of_life:crit1",
+        "stream": false
+      },
+      {
+        "name": "quality_of_life:crit2",
+        "stream": false
+      },
+      {
+        "name": "quality_of_life:crit3",
+        "stream": false
+      }
+    ]
+  }
+}

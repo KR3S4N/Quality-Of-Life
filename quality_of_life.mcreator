@@ -1,5 +1,84 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Deathripper",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deathripper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/resources/quality_of_life/enchantment/DeathripperEnchantment.java"
+        ]
+      },
+      "path": "~/Enchanting/Special/Specialty"
+    },
+    {
+      "name": "Voidwracker",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "voidwracker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/resources/quality_of_life/enchantment/VoidwrackerEnchantment.java"
+        ]
+      },
+      "path": "~/Enchanting/Special/Specialty"
+    },
+    {
+      "name": "Hellsplitter",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellsplitter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/resources/quality_of_life/enchantment/HellsplitterEnchantment.java"
+        ]
+      },
+      "path": "~/Enchanting/Special/Specialty"
+    },
+    {
+      "name": "SpecialEnchantsApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "special_enchants_apply",
+      "metadata": {
+        "files": [
+          "src/main/java/net/resources/quality_of_life/procedures/SpecialEnchantsApplyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Enchanting/Special/Specialty"
+    }
+  ],
   "variable_elements": [
     {
       "name": "isRedFlareDeployed",
@@ -20,50 +99,102 @@
       "value": "false"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "player.attack.attunements_match",
+      "files": [
+        "crit1",
+        "crit2",
+        "crit3"
+      ],
+      "category": "player",
+      "subtitle": "Enchantment Applies"
+    }
+  ],
   "tag_elements": {
-    "DAMAGE_TYPES:minecraft:bypasses_cooldown": [
-      "CUSTOM:PyrotechnicMishap"
+    "DAMAGE_TYPES:minecraft:bypasses_cooldown": [],
+    "DAMAGE_TYPES:minecraft:bypasses_enchantments": [],
+    "DAMAGE_TYPES:minecraft:is_explosion": [],
+    "DAMAGE_TYPES:minecraft:bypasses_armor": [],
+    "DAMAGE_TYPES:minecraft:is_projectile": [],
+    "DAMAGE_TYPES:minecraft:bypasses_effects": [],
+    "ENTITIES:mod:voidwracker_applies": [
+      "EntityEnderman",
+      "EntityEndermite",
+      "EntityShulker",
+      "EntityShulkerBullet"
     ],
-    "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
-      "CUSTOM:PyrotechnicMishap"
+    "ENTITIES:mod:hellsplitter_applies": [
+      "EntityBlaze",
+      "EntityGhast",
+      "EntityHoglin",
+      "EntityMagmaCube",
+      "EntityPiglin",
+      "EntityPiglinBrute",
+      "EntityStrider",
+      "EntityZoglin",
+      "EntityPigZombie",
+      "EntityWitherSkeleton"
     ],
-    "DAMAGE_TYPES:minecraft:is_explosion": [
-      "CUSTOM:PyrotechnicMishap"
+    "DAMAGE_TYPES:minecraft:is_fire": [],
+    "ENTITIES:mod:deathripper_applies": [
+      "EntityZombie",
+      "EntityZombieHorse",
+      "EntityZombieVillager",
+      "EntitySkeleton",
+      "EntitySkeletonHorse",
+      "EntityGiantZombie",
+      "EntityPhantom",
+      "EntityHusk",
+      "EntityStray"
     ],
-    "DAMAGE_TYPES:minecraft:bypasses_armor": [
-      "CUSTOM:PyrotechnicMishap"
-    ],
-    "DAMAGE_TYPES:minecraft:is_fire": [
-      "CUSTOM:PyrotechnicMishap"
-    ],
-    "DAMAGE_TYPES:minecraft:is_projectile": [
-      "CUSTOM:PyrotechnicMishap"
-    ],
-    "DAMAGE_TYPES:minecraft:bypasses_effects": [
-      "CUSTOM:PyrotechnicMishap"
-    ],
-    "DAMAGE_TYPES:minecraft:bypasses_shield": [
-      "CUSTOM:PyrotechnicMishap"
+    "DAMAGE_TYPES:minecraft:bypasses_shield": [],
+    "ITEMS:minecraft:mushroom_blocks": [
+      "Blocks.BROWN_MUSHROOM_BLOCK",
+      "Blocks.RED_MUSHROOM_BLOCK",
+      "Blocks.MUSHROOM_STEM"
     ]
   },
   "language_map": {
     "en_us": {
-      "effect.shockwave_smp_resources.flare_deployed_green": "Flare Deployed",
-      "effect.shockwave_smp_resources.flare_deployed_red": "Flare Deployed",
-      "item.shockwave_smp_resources.strength_elixir": "Strength Elixir",
+      "enchantment.quality_of_life.deathripper": "§6Deathripper",
       "item.shockwave_smp_resources.alert_flare_green": "Alert Flare",
-      "subtitles.player.attack.heavy_crit": "Player performs Heavy Crit",
       "item.shockwave_smp_resources.alert_flare_blue": "Alert Flare",
       "item.shockwave_smp_resources.jump_elixir": "Jump Elixir",
       "effect.shockwave_smp_resources.flare_deployed_blue": "Flare Deployed",
+      "item.shockwave_smp_resources.alert_flare_red": "Alert Flare",
+      "effect.shockwave_smp_resources.flare_deployed_green": "Flare Deployed",
+      "effect.shockwave_smp_resources.flare_deployed_red": "Flare Deployed",
+      "item.shockwave_smp_resources.strength_elixir": "Strength Elixir",
+      "enchantment.quality_of_life.hellsplitter": "§6Hellsplitter",
+      "subtitles.player.attack.heavy_crit": "Player performs Heavy Crit",
+      "subtitles.player.attack.attunements_match": "Enchantment Applies",
       "item.shockwave_smp_resources.speed_elixir": "Speed Elixir",
-      "item.shockwave_smp_resources.alert_flare_red": "Alert Flare"
+      "enchantment.quality_of_life.voidwracker": "§6Voidwracker"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Enchanting",
+        "children": [
+          {
+            "name": "Normal",
+            "children": []
+          },
+          {
+            "name": "Special",
+            "children": [
+              {
+                "name": "Specialty",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "quality_of_life",

@@ -3,6 +3,9 @@ package net.resources.quality_of_life;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.resources.quality_of_life.init.QualityOfLifeModSounds;
+import net.resources.quality_of_life.init.QualityOfLifeModEnchantments;
+
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
@@ -36,6 +39,9 @@ public class QualityOfLifeMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		QualityOfLifeModSounds.REGISTRY.register(bus);
+
+		QualityOfLifeModEnchantments.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init
